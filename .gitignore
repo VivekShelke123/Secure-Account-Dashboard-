@@ -1,0 +1,33 @@
+SECURE-ACCOUNT-DASHBOARD/node_modules
+SECURE-ACCOUNT-DASHBOARD/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+SECURE-ACCOUNT-DASHBOARD/coverage
+
+# next.js
+SECURE-ACCOUNT-DASHBOARD/.next/
+SECURE-ACCOUNT-DASHBOARD/out/
+
+# production
+SECURE-ACCOUNT-DASHBOARD/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
