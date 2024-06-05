@@ -9,7 +9,6 @@ export default function Header() {
   const toggleMenu = ()=>{
     const target = document.querySelector('.nav-links');
     target?.classList.toggle('!top-[18%]');
-    console.log(target);
   }
 
   return (
@@ -19,9 +18,9 @@ export default function Header() {
           <div><Image className='w-12' src={image} alt="Logo" /></div>
           <div className="nav-links absolute  md:z-10 duration-500 md:static md:min-w-12 md:min-h-fit  bg-green-200 min-h-[60vh] left-[0] top-[-100%] md:w-auto w-full flex items-center px-5">
             <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
-              <li className='hover:underline hover:cursor-pointer'>Home</li>
-              <li className='hover:underline hover:cursor-pointer'>About Us</li>
-              <li className='hover:underline hover:cursor-pointer'>Contact Us</li>
+              <Link href={'/'} className='hover:underline hover:cursor-pointer'>Home</Link>
+              <Link href={'/UserDashboard'} className='hover:underline hover:cursor-pointer'>About Us</Link>
+              <Link href={''} className='hover:underline hover:cursor-pointer'>Contact Us</Link>
             </div>
           </div>
           <div className='flex items-center gap-6'>
